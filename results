@@ -1,0 +1,23 @@
+**Evaluation Results:**
+
+**Plots of Model Accuracy and Model Loss**
+
+![](RackMultipart20231125-1-5qp7kr_html_d8d20c312fda890.png)
+
+- Precision: 0.949
+- Recall: 0.892
+- Accuracy: 0.922
+
+Classification Report:
+
+![](https://i.postimg.cc/B6qR8S8w/Screenshot-from-2023-11-24-22-10-09.png)
+**Confusion Matrix:**
+
+![](https://i.postimg.cc/3JrF0yxT/image-2.png)
+
+The classification model performed well with an overall accuracy of 92%. It was slightly better at identifying 'AI' with a high recall, and very precise in identifying 'REAL'. Both categories had a balanced F1-score of 0.92, indicating good precision and recall balance.
+
+**Challenges Faced:**
+
+- Model was overfitting during the intial training to avoid this I have implememted data augumentation, retrained ResNet50 layers.
+- Ensuring the model not only achieves high accuracy but also generalizes well to new, unseen images is challenging. This involves careful tuning of the model's architecture and training parameters, and extensive testing with diverse data.
